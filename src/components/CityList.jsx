@@ -5,9 +5,9 @@ import styles from './CityList.module.css';
 import { useCities } from '../contexts/CitiesContext';
 
 function CityList() {
-  const {cities, loading } = useCities();
+  const {cities, isLoading } = useCities();
   
-    if(loading) {
+    if(isLoading) {
         return <Spinner />
     }
 
